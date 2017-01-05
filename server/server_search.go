@@ -16,6 +16,19 @@ var defaultSearchConfig = []byte(`{
 			"peers": "td:nth-child(4)"
 		}
 	},
+	"tpb": {
+		"name": "The Pirate Bay",
+		"url": "https://thepiratebay.se/search/{{query}}/{{page:0}}/7//",
+		"list": "#searchResult > tbody > tr",
+		"result": {
+			"name":"a.detLink",
+			"path":["a.detLink","@href"],
+			"magnet": ["a[title=Download\\ this\\ torrent\\ using\\ magnet]","@href"],
+			"size": "/Size (\\d+(\\.\\d+).[KMG]iB)/",
+			"seeds": "td:nth-child(3)",
+			"peers": "td:nth-child(4)"
+		}
+	},
 	"abb": {
 		"name": "The Audiobook Bay",
 		"url": "http://audiobookbay.co/page/{{page:1}}?s={{query}}",
