@@ -25,7 +25,7 @@
 		<div class="title">
 			<h2>
 				<a>
-				<img src="https://i.imgur.com/3ZemA3l.png">
+				<img src="https://i.imgur.com/3ZemA3l.png" style="width:304px;height:228px;">
 				<h1>PhoenixFix</h1>
 				</a>
 			</h2>
@@ -53,9 +53,7 @@
 		<section class="torrents" ng-controller="TorrentsController" ng-include src="'template/torrents.html'"></section>
 		<section class="downloads" ng-controller="DownloadsController" ng-include src="'template/downloads.html'"></section>
 		<footer>
-      <span>github.com/<a href="https://github.com/jaswinder-singh" target="_blank">jaswinder-singh</a>/<a href="https://github.com/jaswinder-singh/torrentsaga" target="_blank">torrentsaga</a> version {{ state.Stats.Version }}	-	</span>
-			<span ng-if="numKeys(state.Users) > 1">{{ numKeys(state.Users) }} users connected	-	</span>
-			<span>Using <a href="https://golang.org" target="_blank">Go</a> {{ state.Stats.Runtime }}</span>
+      <span>github.com</span>
 		</footer>
 
 		<script src="js/vendor/query-string.js"></script>
